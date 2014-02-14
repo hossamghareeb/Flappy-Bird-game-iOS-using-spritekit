@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7F7ABCC3-8BB8-4803-A0F0-50388CAF01C4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Flappy Bird</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>03436F37-0588-4624-8D3C-46D5D658B849</key>
+		<string>https://github.com/most-wanted/Flappy-Bird-game-iOS-using-spritekit.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Flappy Bird/Flappy Bird.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>03436F37-0588-4624-8D3C-46D5D658B849</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/most-wanted/Flappy-Bird-game-iOS-using-spritekit.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>03436F37-0588-4624-8D3C-46D5D658B849</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>03436F37-0588-4624-8D3C-46D5D658B849</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Flappy Bird</string>
+		</dict>
+	</array>
+</dict>
+</plist>
