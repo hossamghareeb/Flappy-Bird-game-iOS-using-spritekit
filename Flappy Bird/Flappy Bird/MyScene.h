@@ -11,6 +11,7 @@
 @interface MyScene : SKScene
 {
     BOOL gameStarted;
+    float spacing;
 }
 
 @property (nonatomic, strong) Bird *bird;

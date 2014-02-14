@@ -25,6 +25,7 @@
 		DAA4608F18AE74E600D4FA9B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DAA4608D18AE74E600D4FA9B /* InfoPlist.strings */; };
 		DAA4609118AE74E600D4FA9B /* Flappy_BirdTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA4609018AE74E600D4FA9B /* Flappy_BirdTests.m */; };
 		DAA4609C18AE7EC000D4FA9B /* Bird.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA4609B18AE7EC000D4FA9B /* Bird.m */; };
+		DAA4609E18AE8DA700D4FA9B /* bird.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA4609D18AE8DA700D4FA9B /* bird.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		DAA4609018AE74E600D4FA9B /* Flappy_BirdTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Flappy_BirdTests.m; sourceTree = "<group>"; };
 		DAA4609A18AE7EC000D4FA9B /* Bird.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bird.h; sourceTree = "<group>"; };
 		DAA4609B18AE7EC000D4FA9B /* Bird.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bird.m; sourceTree = "<group>"; };
+		DAA4609D18AE8DA700D4FA9B /* bird.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bird.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 		DAA4606618AE74E500D4FA9B /* Flappy Bird */ = {
 			isa = PBXGroup;
 			children = (
+				DAA4609D18AE8DA700D4FA9B /* bird.png */,
 				DAA4606F18AE74E600D4FA9B /* AppDelegate.h */,
 				DAA4607018AE74E600D4FA9B /* AppDelegate.m */,
 				DAA4607218AE74E600D4FA9B /* Main.storyboard */,
@@ -246,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAA4606B18AE74E600D4FA9B /* InfoPlist.strings in Resources */,
+				DAA4609E18AE8DA700D4FA9B /* bird.png in Resources */,
 				DAA4607E18AE74E600D4FA9B /* Images.xcassets in Resources */,
 				DAA4607C18AE74E600D4FA9B /* Spaceship.png in Resources */,
 				DAA4607418AE74E600D4FA9B /* Main.storyboard in Resources */,
