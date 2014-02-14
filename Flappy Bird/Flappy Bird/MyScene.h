@@ -11,6 +11,7 @@
 @interface MyScene : SKScene
 {
     BOOL gameStarted;
+    BOOL gameOver;
     float spacing;
 }
 

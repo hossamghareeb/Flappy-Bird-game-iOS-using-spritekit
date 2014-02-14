@@ -22,7 +22,7 @@
         /* Setup your scene here */
         
         self.backgroundColor = [SKColor redColor];
-        
+        self.physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:self.frame];
         self.bird = [Bird spriteNodeWithImageNamed:@"bird.png"];
         self.bird.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:self.bird.size.width / 2];
         self.bird.physicsBody.dynamic = NO;
@@ -59,7 +59,6 @@
     topObstacle.anchorPoint = CGPointMake(0, 1);
     topObstacle.position = CGPointMake(320 , self.size.height + kObstacleHeight);
     
-    
     SKSpriteNode *bottomObstacle = [SKSpriteNode spriteNodeWithColor:[SKColor greenColor] size:CGSizeMake(kObstacleWidth, kObstacleHeight)];
     bottomObstacle.anchorPoint = CGPointMake(0, 1);
     bottomObstacle.position = CGPointMake(320 , 0);
@@ -82,7 +81,7 @@
 -(void)update:(CFTimeInterval)currentTime {
     /* Called before each frame is rendered */
     
-    if (gameStarted) {
+    if (!gameOver && gameStarted) {
         
         NSMutableArray *toBeRemovedFromScene = [NSMutableArray array];
         spacing += kSpeed;
@@ -93,10 +92,14 @@
             [self addObstacle];
         }
         
-        
         for (SKSpriteNode *obstacle in self.obstacles) {
 
             obstacle.position = CGPointMake(obstacle.position.x - kSpeed, obstacle.position.y);
+            
+            if ([obstacle intersectsNode:self.bird]) {
+                gameOver = YES;
+                self.bird.physicsBody.dynamic = NO;
+            }
             
             if (obstacle.position.x < - kObstacleWidth) {
                 //remove
