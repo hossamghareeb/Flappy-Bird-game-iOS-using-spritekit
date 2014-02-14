@@ -14,16 +14,19 @@
     if (self = [super initWithSize:size]) {
         /* Setup your scene here */
         
-        self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
+        self.backgroundColor = [SKColor blackColor];
         
-        SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
+        self.bird = [Bird spriteNodeWithColor:[UIColor whiteColor] size:CGSizeMake(30, 30)];
+        self.bird.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:self.bird.size.width / 2];
+        self.bird.physicsBody.dynamic = NO;
+        self.bird.physicsBody.density = 1.5;
+        self.bird.physicsBody.linearDamping = 1;
+        self.bird.position = CGPointMake(160, 300);
         
-        myLabel.text = @"Hello, World!";
-        myLabel.fontSize = 30;
-        myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
-                                       CGRectGetMidY(self.frame));
+        [self addChild:self.bird];
         
-        [self addChild:myLabel];
+        self.obstacles = [NSMutableArray array];
+        
     }
     return self;
 }
@@ -32,17 +35,12 @@
     /* Called when a touch begins */
     
     for (UITouch *touch in touches) {
-        CGPoint location = [touch locationInNode:self];
+        if (!gameStarted) {
+            gameStarted = YES;
+            self.bird.physicsBody.dynamic = YES;
+        }
         
-        SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:@"Spaceship"];
-        
-        sprite.position = location;
-        
-        SKAction *action = [SKAction rotateByAngle:M_PI duration:1];
-        
-        [sprite runAction:[SKAction repeatActionForever:action]];
-        
-        [self addChild:sprite];
+        [self.bird bounce];
     }
 }
 

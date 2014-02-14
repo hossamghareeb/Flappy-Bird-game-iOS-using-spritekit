@@ -7,7 +7,12 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
-
+#import "Bird.h"
 @interface MyScene : SKScene
+{
+    BOOL gameStarted;
+}
 
+@property (nonatomic, strong) Bird *bird;
+@property (nonatomic, strong) NSMutableArray *obstacles;
 @end

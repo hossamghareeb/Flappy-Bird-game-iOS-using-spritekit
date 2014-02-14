@@ -24,6 +24,7 @@
 		DAA4608718AE74E600D4FA9B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA4606218AE74E500D4FA9B /* UIKit.framework */; };
 		DAA4608F18AE74E600D4FA9B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DAA4608D18AE74E600D4FA9B /* InfoPlist.strings */; };
 		DAA4609118AE74E600D4FA9B /* Flappy_BirdTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA4609018AE74E600D4FA9B /* Flappy_BirdTests.m */; };
+		DAA4609C18AE7EC000D4FA9B /* Bird.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA4609B18AE7EC000D4FA9B /* Bird.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		DAA4608C18AE74E600D4FA9B /* Flappy BirdTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Flappy BirdTests-Info.plist"; sourceTree = "<group>"; };
 		DAA4608E18AE74E600D4FA9B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DAA4609018AE74E600D4FA9B /* Flappy_BirdTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Flappy_BirdTests.m; sourceTree = "<group>"; };
+		DAA4609A18AE7EC000D4FA9B /* Bird.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bird.h; sourceTree = "<group>"; };
+		DAA4609B18AE7EC000D4FA9B /* Bird.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bird.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +134,8 @@
 				DAA4607B18AE74E600D4FA9B /* Spaceship.png */,
 				DAA4607D18AE74E600D4FA9B /* Images.xcassets */,
 				DAA4606718AE74E500D4FA9B /* Supporting Files */,
+				DAA4609A18AE7EC000D4FA9B /* Bird.h */,
+				DAA4609B18AE7EC000D4FA9B /* Bird.m */,
 			);
 			path = "Flappy Bird";
 			sourceTree = "<group>";
@@ -262,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAA4609C18AE7EC000D4FA9B /* Bird.m in Sources */,
 				DAA4607A18AE74E600D4FA9B /* MyScene.m in Sources */,
 				DAA4607718AE74E600D4FA9B /* ViewController.m in Sources */,
 				DAA4607118AE74E600D4FA9B /* AppDelegate.m in Sources */,
